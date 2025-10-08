@@ -1,5 +1,7 @@
 package dao;
 
 public interface IDao {
-    double getData();
+    default double getData() {
+        return 0;
+    }
 }
